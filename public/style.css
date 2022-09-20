@@ -1,0 +1,157 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  background-image: url("https://cdn.discordapp.com/attachments/468228661418524673/823877228315541544/unknown.png");
+  background-color: #181818;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+.espaçamento {
+  margin: 0 auto;
+  height: 40px;
+}
+
+.calculadora {
+  margin: 0 auto;
+  width: 320px;
+  background-color: black;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.tela {
+  width: 304px;
+  height: 55px;
+  border: 0;
+  border-radius: 1rem 1rem 0 0;
+  padding-right: 15px;
+  padding-top: 10px;
+  background-color: #202020;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  color: white;
+  overflow-x: auto;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.contas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 0;
+  margin: 10px;
+}
+
+.contas div {
+  color: white;
+  border-radius: 0.2rem;
+  background-color: #202020;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+  padding: 10px 25px;
+}
+
+.painel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+.painel .numeros {
+  color: white;
+  border: 0;
+  border-radius: 0.2rem;
+  text-align: center;
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: #202020;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.n0 {
+  grid-column: 1;
+  grid-row: 4;
+}
+.n1 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.n2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+.n3 {
+  grid-column: 3;
+  grid-row: 3;
+}
+.n4 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.n5 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.n6 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.n7 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.n8 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.n9 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.n-ponto {
+  grid-column: 2;
+  grid-row: 4;
+}
+.n-c {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.igual {
+  grid-column: 4;
+  grid-row: 1/5;
+  border: 0;
+  border-radius: 0.2rem;
+  text-align: center;
+  padding: 93px 20px;
+  vertical-align: top;
+  cursor: pointer;
+  color: #fff;
+  background-color: #202020;
+  transition: all 0.2s ease-in-out;
+}
